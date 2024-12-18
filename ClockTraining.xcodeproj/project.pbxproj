@@ -6,12 +6,35 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4E73170B2D12DA1000E3A939 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 4E73170A2D12DA0200E3A939 /* .gitignore */; };
+		4E8106862CECA43300FFE23B /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 4E8106852CECA43300FFE23B /* .swiftlint.yml */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4E7D17BC2CF4A4CC00162C83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E81065F2CEC94A900FFE23B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E8106662CEC94A900FFE23B;
+			remoteInfo = ClockTraining;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		4E73170A2D12DA0200E3A939 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		4E7D17B82CF4A4CB00162C83 /* ClockTrainingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClockTrainingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E8106672CEC94A900FFE23B /* ClockTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClockTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E8106852CECA43300FFE23B /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		4E8106692CEC94A900FFE23B /* ClockTraining */ = {
+		4E7D17B92CF4A4CC00162C83 /* ClockTrainingTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ClockTrainingTests;
+			sourceTree = "<group>";
+		};
+		4E7D17E02CF9A0BE00162C83 /* ClockTraining */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = ClockTraining;
 			sourceTree = "<group>";
@@ -19,6 +42,13 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4E7D17B52CF4A4CB00162C83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4E8106642CEC94A900FFE23B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -32,7 +62,10 @@
 		4E81065E2CEC94A900FFE23B = {
 			isa = PBXGroup;
 			children = (
-				4E8106692CEC94A900FFE23B /* ClockTraining */,
+				4E73170A2D12DA0200E3A939 /* .gitignore */,
+				4E8106852CECA43300FFE23B /* .swiftlint.yml */,
+				4E7D17E02CF9A0BE00162C83 /* ClockTraining */,
+				4E7D17B92CF4A4CC00162C83 /* ClockTrainingTests */,
 				4E8106682CEC94A900FFE23B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				4E8106672CEC94A900FFE23B /* ClockTraining.app */,
+				4E7D17B82CF4A4CB00162C83 /* ClockTrainingTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,6 +82,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		4E7D17B72CF4A4CB00162C83 /* ClockTrainingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E7D17BE2CF4A4CC00162C83 /* Build configuration list for PBXNativeTarget "ClockTrainingTests" */;
+			buildPhases = (
+				4E7D17B42CF4A4CB00162C83 /* Sources */,
+				4E7D17B52CF4A4CB00162C83 /* Frameworks */,
+				4E7D17B62CF4A4CB00162C83 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E7D17BD2CF4A4CC00162C83 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				4E7D17B92CF4A4CC00162C83 /* ClockTrainingTests */,
+			);
+			name = ClockTrainingTests;
+			packageProductDependencies = (
+			);
+			productName = ClockTrainingTests;
+			productReference = 4E7D17B82CF4A4CB00162C83 /* ClockTrainingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		4E8106662CEC94A900FFE23B /* ClockTraining */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4E8106752CEC94AA00FFE23B /* Build configuration list for PBXNativeTarget "ClockTraining" */;
@@ -55,13 +112,14 @@
 				4E8106632CEC94A900FFE23B /* Sources */,
 				4E8106642CEC94A900FFE23B /* Frameworks */,
 				4E8106652CEC94A900FFE23B /* Resources */,
+				4E8106822CECA0AF00FFE23B /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				4E8106692CEC94A900FFE23B /* ClockTraining */,
+				4E7D17E02CF9A0BE00162C83 /* ClockTraining */,
 			);
 			name = ClockTraining;
 			packageProductDependencies = (
@@ -80,6 +138,10 @@
 				LastSwiftUpdateCheck = 1610;
 				LastUpgradeCheck = 1610;
 				TargetAttributes = {
+					4E7D17B72CF4A4CB00162C83 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 4E8106662CEC94A900FFE23B;
+					};
 					4E8106662CEC94A900FFE23B = {
 						CreatedOnToolsVersion = 16.1;
 					};
@@ -100,21 +162,59 @@
 			projectRoot = "";
 			targets = (
 				4E8106662CEC94A900FFE23B /* ClockTraining */,
+				4E7D17B72CF4A4CB00162C83 /* ClockTrainingTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4E8106652CEC94A900FFE23B /* Resources */ = {
+		4E7D17B62CF4A4CB00162C83 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4E8106652CEC94A900FFE23B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E73170B2D12DA1000E3A939 /* .gitignore in Resources */,
+				4E8106862CECA43300FFE23B /* .swiftlint.yml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4E8106822CECA0AF00FFE23B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]\nthen\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\nif command -v swiftlint >/dev/null 2>&1\nthen\n    swiftlint\nelse\n    echo \"warning: `swiftlint` command not found - See https://github.com/realm/SwiftLint#installation for installation instructions.\"\nfi\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		4E7D17B42CF4A4CB00162C83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4E8106632CEC94A900FFE23B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,7 +224,53 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		4E7D17BD2CF4A4CC00162C83 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E8106662CEC94A900FFE23B /* ClockTraining */;
+			targetProxy = 4E7D17BC2CF4A4CC00162C83 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		4E7D17BF2CF4A4CC00162C83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N4F7RVH5TU;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ksurikova.ClockTrainingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClockTraining.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ClockTraining";
+			};
+			name = Debug;
+		};
+		4E7D17C02CF4A4CC00162C83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = N4F7RVH5TU;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ksurikova.ClockTrainingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ClockTraining.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ClockTraining";
+			};
+			name = Release;
+		};
 		4E8106732CEC94AA00FFE23B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -254,6 +400,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ClockTraining/Preview Content\"";
 				DEVELOPMENT_TEAM = N4F7RVH5TU;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -283,6 +430,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ClockTraining/Preview Content\"";
 				DEVELOPMENT_TEAM = N4F7RVH5TU;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -305,6 +453,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4E7D17BE2CF4A4CC00162C83 /* Build configuration list for PBXNativeTarget "ClockTrainingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E7D17BF2CF4A4CC00162C83 /* Debug */,
+				4E7D17C02CF4A4CC00162C83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4E8106622CEC94A900FFE23B /* Build configuration list for PBXProject "ClockTraining" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
